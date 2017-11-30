@@ -1,0 +1,151 @@
+{
+	"Module1": {
+		"_comment_page1": "CheckoutWebpage.json",
+		"CityNameTxt": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": ""
+			},
+			{
+				"d_xpath": "//div[@class='cityList']//div[text()='{CityNameTxt}']"
+			},
+			{
+				"css": ""
+			}
+		],
+		"StartJourneyBtn": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "//div[@id='home']//a[@class='search']"
+			},
+			{
+				"css": ""
+			}
+		],
+		"LocateMeBtn": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "//div[@class='locate']//img"
+			},
+			{
+				"css": ""
+			}
+		],
+		"NextBtn": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "//div[@class='actions']//button[text()='Next']"
+			},
+			{
+				"css": ""
+			}
+		],
+		"DoneBtn": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "//div[@class='actions']//button[text()='Done']"
+			},
+			{
+				"css": ""
+			}
+		],
+		"BookNowBtn": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "(//div[@class='car-amount']//button[text()='BOOK NOW'])[1]"
+			},
+			{
+				"css": ""
+			}
+		],
+		"MobileNumTxtFld": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "//div[@class='input-container']//input[@type='text']"
+			},
+			{
+				"css": ""
+			}
+		],
+		"NextIcn": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "//form[@class='zc-auth-content-bottom']//img[@class='zc-auth-next-icon']"
+			},
+			{
+				"css": ""
+			}
+		],
+		"PasswordFld": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "//div[@class='input-container']//input[@type='password']"
+			},
+			{
+				"css": ""
+			}
+		],
+			"PwdNextIcn": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "//form[@class='zc-auth-content-bottom']//img[@class='submit animated bounceIn']"
+			},
+			{
+				"css": ""
+			}
+		],
+		"ErrorMsg": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "//p[@class='error']"
+			},
+			{
+				"css": ""
+			}
+		],
+	"CheckOutBtn": [
+			{
+				"id": "checkoutButton"
+			},
+			{
+				"xpath": ""
+			},
+			{
+				"css": ""
+			}
+		],
+	"PaymentMethodsTxt": [
+			{
+				"id": ""
+			},
+			{
+				"xpath": "//h2[text()='Payment Methods']"
+			},
+			{
+				"css": ""
+			}
+		]
+	}
+}

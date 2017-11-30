@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.cbt.docsapp.reports.MyNXGTestListner"/>
+  </listeners>
+  <test name="Module1_ANDROID(failed)" parallel="tests">
+    <parameter name="port" value="4729"/>
+    <parameter name="Device UDID" value="420076ac967123f9"/>
+    <parameter name="Device Version" value="5.1.1"/>
+    <parameter name="Device Name" value="SM-J200G"/>
+    <classes>
+      <class name="com.cbt.docsapp.android.tests.Module1.TC_2">
+        <methods>
+          <include name="launch"/>
+          <include name="resrtApp"/>
+          <include name="TC_2" invocation-numbers="0"/>
+          <include name="startAppiumServer"/>
+          <include name="stopAppiumServer"/>
+        </methods>
+      </class> <!-- com.cbt.docsapp.android.tests.Module1.TC_2 -->
+    </classes>
+  </test> <!-- Module1_ANDROID(failed) -->
+</suite> <!-- Failed suite [Suite] -->

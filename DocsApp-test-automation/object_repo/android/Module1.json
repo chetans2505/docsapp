@@ -1,0 +1,101 @@
+{
+    "Module1": {
+        "selectLanguageTxt": [
+            {"id":"com.docsapp.patients:id/text_english"},
+            {"xpath":""}
+        ],
+        "proceedButton": [
+            {"id":"com.docsapp.patients:id/btn_proceed"},
+            {"xpath":""}
+        ],
+        "mobNumTxtFld": [
+            {"id":"com.docsapp.patients:id/txt_phone_no"},
+            {"xpath":""},
+        ],
+        "unameTxtFld": [
+            {"id":"com.docsapp.patients:id/txt_name"},
+            {"xpath":""}
+        ],
+       "VerifyProceedBtn": [
+            {"id":"com.docsapp.patients:id/btn_verify_proceed"},
+            {"xpath":""}
+        ],
+	"OTPTxtFld": [
+            {"id":"com.docsapp.patients:id/txt_otp"},
+            {"xpath":""}
+        ],
+	"VerifyLaterBtn": [
+            {"id":"com.docsapp.patients:id/btn_verify_later"},
+            {"xpath":""}
+        ],
+	"HomeBtn": [
+            {"id":""},
+            {"xpath":"//android.widget.TextView[@text='Home']"}
+        ],
+	"MenuBtn": [
+            {"id":""},
+            {"xpath":"//android.widget.ImageButton[@index='0']"}
+        ],
+	"TalkToDoctorBtn": [
+            {"id":""},
+            {"xpath":"//android.widget.TextView[@text='Talk to Doctor']"}
+        ],
+	"ConsultADoctorPage": [
+            {"id":"com.docsapp.patients:id/chatscreen_toolbar_singletitle"},
+            {"xpath":""}
+        ],
+	"PatientSelect": [
+            {"id":"com.docsapp.patients:id/askq_me"},
+            {"xpath":""}
+        ],
+	"AgeTxtFld": [
+            {"id":"com.docsapp.patients:id/age"},
+            {"xpath":""}
+        ],
+	"MaleGenderSelect": [
+            {"id":"com.docsapp.patients:id/maleImage"},
+            {"xpath":""}
+        ],
+	"QueryTxtFld": [
+            {"id":"com.docsapp.patients:id/query"},
+            {"xpath":""}
+        ],
+	"SelectSpcialityBtn": [
+            {"id":"com.docsapp.patients:id/txt_topic_title"},
+            {"xpath":""}
+        ],
+	"SkinProbSelect": [
+            {"id":""},
+            {"xpath":"//android.widget.TextView[@text='Skin problems']"}
+        ],
+	"SubmitBtn": [
+            {"id":""},
+            {"xpath":"//android.widget.TextView[@text='SUBMIT']"}
+        ],
+
+"AlertOkay": [
+            {"id":"com.docsapp.patients:id/dialog_button"},
+            {"xpath":""}
+        ],
+
+"DocName": [
+            {"id":"com.docsapp.patients:id/chatscreen_toolbar_title"},
+            {"xpath":""}
+        ],
+"PayBtn": [
+            {"id":"com.docsapp.patients:id/btn_clickToPay"},
+            {"xpath":""}
+        ],
+"MsgTxtFld": [
+            {"id":"com.docsapp.patients:id/viewmes_message"},
+            {"xpath":""}
+        ],
+"MsgSendBtn": [
+            {"id":"com.docsapp.patients:id/chatscreen_iv_sendorcall"},
+            {"xpath":""}
+        ]
+
+
+
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "SignUpPage": {
+        "EditEmailAddressEdtBx": [
+            {"id":"com.zoomcar:id/edit_email"},
+            {"xpath":""}
+        ],
+        "NameAsOnDLEdtBx": [
+            {"id":"com.zoomcar:id/edit_name"},
+            {"xpath":""}
+        ],
+        "PasswordEdtBx": [
+            {"id":"com.zoomcar:id/edit_password"},
+            {"xpath":""}
+        ],
+         "SignUpBtn": [
+            {"id":"com.zoomcar:id/button_signup"},
+            {"xpath":""}
+        ]
+    }
+}

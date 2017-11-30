@@ -1,0 +1,110 @@
+{
+    "Module1": {
+     "_comment_CityPage": "CityPage",
+         "GetStaredBtn": [
+            {"id":""},
+            {"xpath":"//android.widget.TextView[@text='GET STARTED']"}
+        ],
+        "SearchForYourCityEdtBx": [
+            {"id":"com.zoomcar:id/edit_text_city_name"},
+            {"xpath":""}
+        ],
+       "CityNameTxt": [
+            {"id":""},
+            {"d_xpath":"//android.widget.TextView[@text='{CityNameTxt}']"}
+        ],
+        "_comment_Search Cab Page": "Search Cab Page",
+        "SelectYourStartingPointLnkTab": [
+            {"id":"com.zoomcar:id/text_location_address"},
+            {"xpath":""}
+        ],
+         "PickUpLocationIcon": [
+            {"id":"com.zoomcar:id/text_pickup_location"},
+            {"xpath":""}
+        ],
+        "EditSearchPlaceEdtBx": [
+            {"id":"com.zoomcar:id/edit_search_place"},
+            {"xpath":""}
+        ],
+        "SearchedPlaceLst": [
+            {"id":""},
+            {"xpath":"//android.widget.ListView[@resource-id='com.zoomcar:id/list_place_searched']//android.widget.TextView[@resource-id='com.zoomcar:id/text_place_name']"}
+        ],
+         "ContinueBtn": [
+            {"id":"com.zoomcar:id/text_continue"},
+            {"xpath":"//android.widget.TextView[@text='CONTINUE']"}
+        ],
+        "PickUpTimeDtePkr": [
+            {"id":"com.zoomcar:id/text_start_day"},
+            {"xpath":""}
+        ],
+        "DropoffTimeDtePkr": [
+            {"id":"com.zoomcar:id/text_end_day"},
+            {"xpath":""}
+         ],
+        "FindCabsBtn": [
+            {"id":"com.zoomcar:id/button_find_cars"},
+            {"xpath":""}
+        ],
+         "_comment_Book Cab Page": "Book Cab Page",
+         "NextCoachBtn": [
+            {"id":"com.zoomcar:id/button_coach"},
+            {"xpath":""}
+        ],
+        "OkayGotItCoachBtn": [
+            {"id":"com.zoomcar:id/button_coach"},
+            {"xpath":""}
+        ],
+        "BookBtn": [
+            {"id":"com.zoomcar:id/button_book"},
+            {"xpath":""}
+        ],
+         "_comment": "Check Out Page",
+         "ProccedToPaymentBtn": [
+            {"id":"com.zoomcar:id/button_pay"},
+            {"xpath":""}
+        ],
+        "PaymentPageHdrTxt": [
+            {"id":""},
+            {"xpath":"//android.widget.TextView[@text='Payment']"}
+        ],
+        "_comment_Login  Page": "Login  Page",
+        "FacebookLnkTb": [
+            {"id":"com.zoomcar:id/facebook_container"},
+            {"xpath":""}
+        ],
+        "GooglekLnkTb": [
+            {"id":"com.zoomcar:id/google_container"},
+            {"xpath":""}
+        ],
+        "EmailOrPhoneEdtBx": [
+            {"id":"com.zoomcar:id/edit_association"},
+            {"xpath":""}
+        ],
+         "AuthenticationNextIcon": [
+            {"id":"com.zoomcar:id/auth_continue_button"},
+            {"xpath":""}
+        ],
+        "GmailAccountsLst": [
+            {"id":""},
+            {"d_xpath":"//android.widget.LinearLayout[@resource-id='com.google.android.gms:id/account_picker']//android.widget.TextView[@text='{GmailAccountsLst}']"}
+        ],
+         "_comment_SignUp  Page": "SignUp  Page",
+        "EditEmailAddressEdtBx": [
+            {"id":"com.zoomcar:id/edit_email"},
+            {"xpath":""}
+        ],
+        "NameAsOnDLEdtBx": [
+            {"id":"com.zoomcar:id/edit_name"},
+            {"xpath":""}
+        ],
+        "PasswordEdtBx": [
+            {"id":"com.zoomcar:id/edit_password"},
+            {"xpath":""}
+        ],
+         "SignUpBtn": [
+            {"id":"com.zoomcar:id/button_signup"},
+            {"xpath":""}
+        ]
+    }
+}

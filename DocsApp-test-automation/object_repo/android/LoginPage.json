@@ -1,0 +1,24 @@
+{
+    "LoginPage": {
+        "selectLanguageTxt": [
+            {"id":"com.docsapp.patients:id/text_english"},
+            {"xpath":""}
+        ],
+        "proceedButton": [
+            {"id":"com.docsapp.patients:id/btn_proceed"},
+            {"xpath":""}
+        ],
+        "mobNumTxtFld": [
+            {"id":""},
+            {"xpath":""},
+        ],
+        "unameTxtFld": [
+            {"id":"com.docsapp.patients:id/txt_name"},
+            {"xpath":""}
+        ],
+       "VerifyProceedBtn": [
+            {"id":"com.docsapp.patients:id/btn_verify_proceed"},
+            {"xpath":""}
+        ]
+    }
+}

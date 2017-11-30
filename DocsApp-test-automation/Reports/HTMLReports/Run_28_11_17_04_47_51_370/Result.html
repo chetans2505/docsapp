@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<title>Suite Report</title>
+
+			<link rel="stylesheet" type="text/css" href="../Resources/Css/design.css" />
+			<script type="text/javascript" src="../Resources/Js/jquery.min.js"></script>
+			<!--[if lt IE 9]>
+			<script language="javascript" type="text/javascript" src="../Resources/Js/excanvas.js"></script>
+			<![endif]-->
+
+			<script language="javascript" type="text/javascript" src="../Resources/Js/amcharts.js"></script>
+			<script type="text/javascript" src="../Resources/Js/pie.js">
+</script>
+	
+		<script language="javascript" type="text/javascript">	
+			$(document).ready(function() { $(".video").hide();	
+				$("#showmenu").show(); 	
+				$('#showmenu').click(function(){ 	
+					$('.video').toggle("slide"); 	
+				}); 	
+			});	
+		</script>	
+		<style>	
+				#showmenu{text-align:center; padding-top:20px;color: #585858; font-size: 14px;}	
+				#video{height: 550px;margin-top: 5px;width: 97%;border-style: solid;border-width: 1px;border-color: #21ABCD;/* Shadow for boxes */ -moz-box-shadow: 0 0 10px #CCCCCC; -ms-box-shadow: 0 0 10px #CCCCCC; -webkit-box-shadow: 0 0 10px #CCCCCC; box-shadow: 0 0 10px #CCCCCC; zoom: 1; filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=0), progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=90), progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=180), progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=270); background-color: white;}	
+		</style>	
+		<script language="javascript" type="text/javascript">
+	
+			$(document).ready(function(){
+	
+				$('#tcFilter').on('change',function(){	
+					if($(this).val()=='pass'){	
+						$('.pass').show();	
+						$('.fail').hide();	
+						$('.skip').hide();	
+						$('.config').hide();	
+					}	
+					if($(this).val()=='fail'){	
+						$('.pass').hide();	
+						$('.fail').show();	
+						$('.skip').hide();	
+						$('.config').hide();	
+					}	
+					if($(this).val()=='skip'){	
+						$('.pass').hide();	
+						$('.fail').hide();	
+						$('.skip').show();	
+						$('.config').hide();	
+					}	
+					if($(this).val()=='tests'){ 	
+						$('.pass').show(); 	
+						$('.fail').show();	
+						$('.skip').show(); 	
+						$('.config').hide(); 	
+					}	
+					if($(this).val()=='config'){	
+						$('.pass').hide();	
+						$('.fail').hide();	
+						$('.skip').hide();	
+						$('.config').show();	
+					}	
+					if($(this).val()=='all'){	
+						$('.pass').show();	
+						$('.fail').show();	
+						$('.skip').show();	
+						$('.config').show();	
+					}	
+				});	
+			});	
+		</script> 
+ <script>  
+ var chart;  
+ var legend;  
+  
+ var chartData = [  
+ {  
+ 'status': 'Passed',  
+ 'value': 1, 'color':'#0F9D28'  
+ },  
+ {  
+ 'status': 'Failed',  
+ 'value': 1, 'color':'#DF0C12'  
+ },  
+ {  
+ 'status': 'Skipped',  
+ 'value': 0, 'color':'#F3F24D'  
+ }  
+ ];  
+  
+ AmCharts.ready(function () {  
+ // PIE CHART  
+ chart = new AmCharts.AmPieChart();  
+ chart.dataProvider = chartData;  
+ chart.titleField = 'status';  
+ chart.valueField = 'value';  
+ chart.outlineColor = '#FFFFFF';  
+ chart.outlineAlpha = 0.8;  
+ chart.outlineThickness = 2;  
+ chart.colorField = 'color';  
+ chart.balloonText = '[[title]]<br><span style="font-size:14px"><b>[[status]]</b> ([[value]])</span>'; 
+ // this makes the chart 3D  
+ chart.depth3D = 15;  
+ chart.angle = 30;  
+  
+ // WRITE  
+ chart.write('chart');  
+ });  
+ </script> 		</head>		<body>			<table id="mainTable">				<tr id="header" >					<td id="logo"><img src="../Resources/Img/NXGlogo.png" alt="Logo" height="70" width="140" /> <br/></td>
+ 	 <td id="headertext">
+ZoomCar Test Execution Reports						<div style="padding-right:20px;float:right"><img src="../../../../../Image/zoomcar.jpg" height="70" width="140" /> </i></div>					</td>
+				</tr>
+<tr id="container">
+		<td id="menu">
+<ul>	<li class="menuStyle"><a href="../index.html" >Index</a></li>
+
+
+ </ul>
+ </td>
+
+
+<td id="content">
+		<div class="info">
+			The following pie chart demonstrates the percentage of Passed, Failed and Skipped Test Cases<br/>
+			Time Taken for Executing below Test Cases: <b>317 Sec</b> <br/>
+			Current Run Number: <b>Run 1</b>
+		</div>
+		<div class="info"><br/>			<b>Run Description</b>			<br/><br/>null		</div>		<div>
+
+<p id="showmenu">No Video Recording Available</p>
+		<div class="chartStyle summary" style="width: 32%;background-color: #3B9C9C;">
+			<b>Summary</b><br/><br/>
+			<table>
+				<tr>
+					<td>Execution Date</td>
+					<td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+					<td>28-Nov-2017 04:53:09</td>
+				</tr>
+				<tr>
+					<td>Total Test Script</td>
+					<td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>Passed</td>
+					<td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Failed</td>
+					<td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Skipped</td>
+					<td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+					<td>0</td>
+				</tr>
+			</table> 
+		</div>		<div class="chartStyle" style="text-align: left;margin-left: 30px;float: left;width: 60%;">
+			<div id="chart" style="height:300px;color:black;"></div>
+		</div>
+	</div>
+ <div>
+
+<div style="float:left; color: #585858; font-size: 14px;">
+		<select id="tcFilter" class="filter">
+			<option class="filterOption" value="all">All Methods</option>
+			<option class="filterOption" value="tests">Test Methods</option>
+			<option class="filterOption" value="pass">Passed Test Cases</option>
+			<option class="filterOption" value="fail">Failed Test Cases</option>
+			<option class="filterOption" value="skip">Skipped Test Cases</option>
+			<option class="filterOption" value="config">Configuration Methods</option>
+		</select>Filter The Methods Based on Selection</div>
+<table id="tableStyle" class="chartStyle" style="height:50px; float: left">
+		<tr>			<th>Browser/Device</th>
+			<th>Package</th>
+			<th>Module</th>
+			<th>Test Name</th>
+			<th>Test Description</th>
+<th>Iteration</th>			<th>Time</th>
+			<th style="width: 7%">Status</th>
+		</tr>
+
+<tr class="all pass">
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_1\TC_1_Iteration1\TC_1.html">SM-J200G</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_1\TC_1_Iteration1\TC_1.html">com.cbt.docsapp.android.tests.Module1</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_1\TC_1_Iteration1\TC_1.html">TC_1</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_1\TC_1_Iteration1\TC_1.html">TC_1</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_1\TC_1_Iteration1\TC_1.html">Add description here</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_1\TC_1_Iteration1\TC_1.html">1</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_1\TC_1_Iteration1\TC_1.html">103 Sec</a></td>
+		<td><img style="border: none; width: 25px" src="../Resources/Img/pass.png"></td>
+	</tr>
+<tr class="all fail">
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_2\TC_2_Iteration1\TC_2.html">SM-J200G</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_2\TC_2_Iteration1\TC_2.html">com.cbt.docsapp.android.tests.Module1</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_2\TC_2_Iteration1\TC_2.html">TC_2</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_2\TC_2_Iteration1\TC_2.html">TC_2</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_2\TC_2_Iteration1\TC_2.html">Add description here</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_2\TC_2_Iteration1\TC_2.html">1</a></td>
+		<td><a href="Suite\Module1_ANDROID\com\cbt\docsapp\android\tests\Module1\TC_2\TC_2_Iteration1\TC_2.html">102 Sec</a></td>
+		<td><img style="border: none; width: 25px" src="../Resources/Img/fail.png"></td>
+	</tr>
+ </table>
+ </div>
+ </td>
+ </tr>			<tr id="footer">
+							<td colspan="2">
+								Best Viewed in &nbsp;
+								<a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> &nbsp;
+								<a href="http://www.apple.com/in/safari/">Safari</a>&nbsp;
+								<a href="http://www.google.com/chrome/">Chrome</a>&nbsp;
+								<a href="http://windows.microsoft.com/en-IN/internet-explorer/download-ie">IE 9 & Above</a>&nbsp;
+							&nbsp;
+							NXG Reporter Version: v1.0.0&nbsp;
+							Reports by: <a href="http://seleniumbyneeds.blogspot.in/">Selenium By Needs</a>
+					</td>
+ 				</tr>
+			</table>
+		</body>
+</html>
