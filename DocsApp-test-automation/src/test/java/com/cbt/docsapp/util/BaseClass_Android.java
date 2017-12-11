@@ -5,11 +5,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -92,7 +91,14 @@ public class BaseClass_Android {
 
 	@AfterClass
 	public void resrtApp() {
-		aDriver.resetApp();
+		//aDriver.resetApp();
+		aDriver.closeApp();
+		/*String reportsFolderPath = System.getProperty("user.dir");
+		System.out.println("sys path:"+reportsFolderPath);
+		ChromeDriver drive=new ChromeDriver();
+		
+		System.setProperty("webdriver.chrome.driver", reportsFolderPath+"\\"+"resources\\exe\\chromedriver.exe");
+		drive.get(reportsFolderPath+"\\"+"Reports\\HTMLReports\\index.html");*/
 	}
 	
 	
@@ -100,6 +106,8 @@ public class BaseClass_Android {
 	public void stopAppiumServer() {
 		service.stop();
 		aDriver.quit();
+		
+		
 		
 		System.out.println("appium server stopped" );
 		System.out.println("After Suite");

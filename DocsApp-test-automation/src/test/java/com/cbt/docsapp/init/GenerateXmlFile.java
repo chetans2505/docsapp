@@ -118,10 +118,10 @@ public class GenerateXmlFile {
 			for(int i=10;i<=16;i++)
 			{
 				//System.out.println(ExcelLibrary.getExcelData("./execution control/config_execution.xlsx", "Test Execution Control", i, 3));
-				if(ExcelLibrary.getExcelData("./execution control/config_execution.xlsx", "Test Execution Control", i, 3).trim().equals("Yes"))
+				if(ExcelLibrary.getExcelData("./config/config.xlsx", "Test Execution Control", i, 3).trim().equals("Yes"))
 				{
 					//System.out.println(ExcelLibrary.getExcelData("./execution control/config_execution.xlsx", "Test Execution Control", i, 2));
-					moduleNames.add(ExcelLibrary.getExcelData("./execution control/config_execution.xlsx", "Test Execution Control", i, 2));
+					moduleNames.add(ExcelLibrary.getExcelData("./config/config.xlsx", "Test Execution Control", i, 2));
 				}
 				
 			}
